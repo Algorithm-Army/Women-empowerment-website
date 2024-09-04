@@ -1,4 +1,5 @@
 // import "./custom.css";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -40,20 +41,24 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          <button
-            className="btn btn-outline-primary mx-3"
-            style={{ borderRadius: "50px", fontSize: "15px" }}
-            type="button"
-          >
-            Sign In
-          </button>
-          <button
-            className="btn btn-primary"
-            style={{ fontSize: "15px" }}
-            type="button"
-          >
-            Sign Up
-          </button>
+          <Link to="/sign-in">
+            <button
+              className="btn btn-outline-primary mx-3"
+              style={{ borderRadius: "50px", fontSize: "15px" }}
+              type="button"
+            >
+              Sign In
+            </button>
+          </Link>
+          <Link to="/sign-up">
+            <button
+              className="btn btn-primary"
+              style={{ fontSize: "15px" }}
+              type="button"
+            >
+              Sign Up
+            </button>
+          </Link>
         </div>
       </div>
     </nav>

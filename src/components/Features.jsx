@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 function Features() {
   return (
     <>
-      <h3 className="sub-head">Emergency Features</h3>
+      <h3 className="sub-head">Emergency Toolkits</h3>
       <div className="featureBox">
         <a href="/">
           <div className="feature-card">
@@ -39,7 +40,7 @@ function Features() {
             <p className="feature-des">Chat Here</p>
           </div>
         </a>
-        <a href="/">
+        <Link to="/live-location">
           <div className="feature-card">
             <span className="feature-icon">
               <img
@@ -50,17 +51,17 @@ function Features() {
             </span>
             <p className="feature-des">Location Tracking</p>
           </div>
-        </a>
+        </Link>
         <a href="/">
           <div className="feature-card">
             <span className="feature-icon">
               <img
-                src="src/components/images/panic-icon-m.png"
+                src="src/components/images/voice-icon-m.png"
                 alt=""
-                style={{ width: "7em" }}
+                style={{ width: "5em" }}
               />
             </span>
-            <p className="feature-des">Panic Mode</p>
+            <p className="feature-des">Voice Tracking</p>
           </div>
         </a>
       </div>
