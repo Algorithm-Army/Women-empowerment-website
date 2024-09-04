@@ -1,0 +1,127 @@
+.btn-outline-primary {
+  background: rgb(227, 227, 227);
+  border: none;
+  color: black;
+  outline: none;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+.btn-outline-primary:hover {
+  background: lightgrey;
+  color: black;
+}
+.btn-outline-primary:active {
+  background: silver;
+  color: black;
+}
+.headerbox {
+  position: relative;
+  margin: auto;
+  margin-top: 4%;
+  height: 22em;
+  background: rgb(244, 232, 186);
+  width: 98%;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+}
+.heading {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+}
+.headerImg {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  /* width: 30%; */
+  /* border-radius: 20px; */
+}
+.sub-head {
+  position: relative;
+  margin-left: 3%;
+  margin-top: 2%;
+  font-weight: 400;
+}
+.sub-head::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  left: -1%;
+  background: rgb(89, 89, 89);
+}
+.featureBox {
+  /* position: relative; */
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-gap: 8em;
+  display: flex;
+  justify-content: center;
+}
+.feature-card {
+  position: relative;
+  width: 9em;
+  height: 10em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+.feature-card:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.feature-icon {
+  /* position: absolute; */
+  margin-top: 1em;
+  background-image: url(src/components/images/sos-icon.jpg);
+  width: 5em;
+  height: 5em;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-des {
+  position: absolute;
+  bottom: 2%;
+  font-weight: 500;
+  color: black;
+}
+.objective-box {
+  margin-top: 5%;
+}
+.objective-body {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 3%;
+}
+.listNum {
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(89, 89, 89);
+  margin-right: 2%;
+}
+.about-box {
+  margin-top: 5%;
+}
+.about-body {
+  margin-left: 5%;
+  margin-top: 3%;
+  font-size: 18px;
+}
+.footer-box {
+  margin-top: 8%;
+  position: relative;
+  width: 100%;
+  height: 10em;
+  background: rgb(244, 232, 186);
+}
