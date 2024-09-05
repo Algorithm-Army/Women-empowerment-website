@@ -135,5 +135,5 @@ li {
 .map-sidebar {
   width: 20vw;
   height: 100vh;
-  background: grey;
+  border-right: 2px solid black;
 }
